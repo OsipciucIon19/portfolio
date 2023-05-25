@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c61f3676.css",
+    "main.css": "/portfolio/static/css/main.408e387f.css",
     "main.js": "/portfolio/static/js/main.9271e738.js",
     "static/media/msc.webm": "/portfolio/static/media/msc.285f7bbdd6819805cedb.webm",
     "static/media/meditatio.webm": "/portfolio/static/media/meditatio.37b7ab50623017fb9ce8.webm",
@@ -21,11 +21,11 @@
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.379c962957fef592498b8c586d52cf4b.svg",
     "index.html": "/portfolio/index.html",
     "static/media/gmail.svg": "/portfolio/static/media/gmail.9f85e50d7f3c45dd6044168951d59399.svg",
-    "main.c61f3676.css.map": "/portfolio/static/css/main.c61f3676.css.map",
+    "main.408e387f.css.map": "/portfolio/static/css/main.408e387f.css.map",
     "main.9271e738.js.map": "/portfolio/static/js/main.9271e738.js.map"
   },
   "entrypoints": [
-    "static/css/main.c61f3676.css",
+    "static/css/main.408e387f.css",
     "static/js/main.9271e738.js"
   ]
 }
