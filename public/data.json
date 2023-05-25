@@ -9,7 +9,7 @@
     {
       "id": "grocery-cart",
       "name": "Grocery Cart",
-      "description": "This application serves as an online store for fruits and vegetables, allowing users to easily add desired products to their shopping cart. The application is written in JavaScript and utilizes the browser's local memory to store and retrieve data. The localStorage API is used by the client to manage the storage of the data.",
+      "description": "This application serves as an online store for fruits and vegetables, allowing users to easily add desired products to their shopping cart. The application is written in JavaScript and utilizes the browser's local memory to store and retrieve data.",
       "gitHubLink": "https://github.com/OsipciucIon19/grocery-cart"
     },
     {

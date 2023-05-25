@@ -138,6 +138,10 @@ nav {
     border-radius: 20px;
 }
 
+.personal-info-video {
+    margin: 2.5rem auto;
+}
+
 video {
     width: 100%;
     max-height: 50%;

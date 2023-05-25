@@ -36,7 +36,7 @@ const PersonalInfo = ({display}) => {
             typeSpeed={0}
           ></Typed></p>
       </div>
-      <video ref={videoRef} width="400" src={video} controlsList="nodownload" autoPlay loop muted />
+      <video className="personal-info-video" ref={videoRef} width="400" src={video} controlsList="nodownload" autoPlay loop muted />
     </section>
   );
 }
