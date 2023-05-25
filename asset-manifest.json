@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ae17aba8.css",
-    "main.js": "/portfolio/static/js/main.6af608ee.js",
+    "main.css": "/portfolio/static/css/main.30cdefae.css",
+    "main.js": "/portfolio/static/js/main.7a0b4361.js",
     "static/media/msc.webm": "/portfolio/static/media/msc.285f7bbdd6819805cedb.webm",
     "static/media/meditatio.webm": "/portfolio/static/media/meditatio.37b7ab50623017fb9ce8.webm",
     "static/media/gandac.webm": "/portfolio/static/media/gandac.e94536b18da2a29319a2.webm",
@@ -21,11 +21,11 @@
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.379c962957fef592498b8c586d52cf4b.svg",
     "index.html": "/portfolio/index.html",
     "static/media/gmail.svg": "/portfolio/static/media/gmail.9f85e50d7f3c45dd6044168951d59399.svg",
-    "main.ae17aba8.css.map": "/portfolio/static/css/main.ae17aba8.css.map",
-    "main.6af608ee.js.map": "/portfolio/static/js/main.6af608ee.js.map"
+    "main.30cdefae.css.map": "/portfolio/static/css/main.30cdefae.css.map",
+    "main.7a0b4361.js.map": "/portfolio/static/js/main.7a0b4361.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae17aba8.css",
-    "static/js/main.6af608ee.js"
+    "static/css/main.30cdefae.css",
+    "static/js/main.7a0b4361.js"
   ]
 }

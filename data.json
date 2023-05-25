@@ -9,19 +9,19 @@
     {
       "id": "grocery-cart",
       "name": "Grocery Cart",
-      "description": "This is a simple application for an online store (of fruits and vegetables), where the user can add the necessary products to the shopping cart. The JavaScript language was used to write the application, and the data are stored in the browser's local memory and are retrieved by the client using the localStorageAPI.",
+      "description": "This application serves as an online store for fruits and vegetables, allowing users to easily add desired products to their shopping cart. The application is written in JavaScript and utilizes the browser's local memory to store and retrieve data. The localStorage API is used by the client to manage the storage of the data.",
       "gitHubLink": "https://github.com/OsipciucIon19/grocery-cart"
     },
     {
       "id": "msc-everywhere",
-      "name": "Msc Everywhere",
-      "description": "This application is dedicated to keeping and listening to music. It was written with the help of the jQuery framework, being used to call the endpoints that were written with the PHP language.",
+      "name": "msc:everywhere",
+      "description": "This application is designed for music storage and playback. It was developed using the jQuery framework, which facilitates communication with server endpoints implemented in PHP.",
       "gitHubLink": "test link"
     },
     {
       "id": "find-a-coach",
       "name": "Find A Coach",
-      "description": "With the help of this application, each user can find a mentor for one of the domains: Frontend, Backend and Career or register as a mentor to be contacted by other users. It was written using the Vue.js framework and uses a Firebase database.",
+      "description": "This application provides users with the ability to find mentors in various domains such as Frontend, Backend, and Career, or register as a mentor to connect with other users. It was developed utilizing the Vue.js framework and utilizes a Firebase database for data storage.",
       "gitHubLink": "https://github.com/OsipciucIon19/learning-vue-2"
     }
   ]
