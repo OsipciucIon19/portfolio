@@ -3,30 +3,26 @@
     {
       "id": "meditatio",
       "name": "meditat.io",
-      "description": "meditat.io description",
-      "gitHubLink": "test link",
-      "recordingVideo": "https://github.com/OsipciucIon19/portfolio/blob/master/src/assets/videos/meditatio.webm"
+      "description": "meditat.io - is a complex application that serves as a platform for online lessons, predestined for students from the Republic of Moldova. The frontend of the application was written with React JS, and the backend with Node.Js.",
+      "gitHubLink": "https://github.com/OsipciucIon19/meditatio"
     },
     {
       "id": "grocery-cart",
       "name": "Grocery Cart",
-      "description": "Grocery Cart description",
-      "gitHubLink": "test link",
-      "recordingVideo": "../assets/videos/grocery-cart.webm"
+      "description": "This is a simple application for an online store (of fruits and vegetables), where the user can add the necessary products to the shopping cart. The JavaScript language was used to write the application, and the data are stored in the browser's local memory and are retrieved by the client using the localStorageAPI.",
+      "gitHubLink": "https://github.com/OsipciucIon19/grocery-cart"
     },
     {
       "id": "msc-everywhere",
       "name": "Msc Everywhere",
-      "description": "Social Platform description",
-      "gitHubLink": "test link",
-      "recordingVideo": "https://github.com/OsipciucIon19/portfolio/blob/master/src/assets/videos/msc.webm"
+      "description": "This application is dedicated to keeping and listening to music. It was written with the help of the jQuery framework, being used to call the endpoints that were written with the PHP language.",
+      "gitHubLink": "test link"
     },
     {
       "id": "find-a-coach",
       "name": "Find A Coach",
-      "description": "Social Platform description",
-      "gitHubLink": "test link",
-      "recordingVideo": "../assets/videos/find-a-coach.webm"
+      "description": "With the help of this application, each user can find a mentor for one of the domains: Frontend, Backend and Career or register as a mentor to be contacted by other users. It was written using the Vue.js framework and uses a Firebase database.",
+      "gitHubLink": "https://github.com/OsipciucIon19/learning-vue-2"
     }
   ]
 }
