@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": "meditatio",
+      "name": "meditat.io",
+      "description": "meditat.io description",
+      "gitHubLink": "test link",
+      "recordingVideo": "https://youtube.com"
+    },
+    {
+      "id": "grocery-cart",
+      "name": "Grocery Cart",
+      "description": "Grocery Cart description",
+      "gitHubLink": "test link",
+      "recordingVideo": "https://youtube.com"
+    },
+    {
+      "id": "social-platform",
+      "name": "Social Platform",
+      "description": "Social Platform description",
+      "gitHubLink": "test link",
+      "recordingVideo": "https://youtube.com"
+    }
+  ]
+}
