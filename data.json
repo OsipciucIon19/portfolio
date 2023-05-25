@@ -5,21 +5,28 @@
       "name": "meditat.io",
       "description": "meditat.io description",
       "gitHubLink": "test link",
-      "recordingVideo": "https://youtube.com"
+      "recordingVideo": "https://github.com/OsipciucIon19/portfolio/blob/master/src/assets/videos/meditatio.webm"
     },
     {
       "id": "grocery-cart",
       "name": "Grocery Cart",
       "description": "Grocery Cart description",
       "gitHubLink": "test link",
-      "recordingVideo": "https://youtube.com"
+      "recordingVideo": "../assets/videos/grocery-cart.webm"
     },
     {
-      "id": "social-platform",
-      "name": "Social Platform",
+      "id": "msc-everywhere",
+      "name": "Msc Everywhere",
       "description": "Social Platform description",
       "gitHubLink": "test link",
-      "recordingVideo": "https://youtube.com"
+      "recordingVideo": "https://github.com/OsipciucIon19/portfolio/blob/master/src/assets/videos/msc.webm"
+    },
+    {
+      "id": "find-a-coach",
+      "name": "Find A Coach",
+      "description": "Social Platform description",
+      "gitHubLink": "test link",
+      "recordingVideo": "../assets/videos/find-a-coach.webm"
     }
   ]
 }
