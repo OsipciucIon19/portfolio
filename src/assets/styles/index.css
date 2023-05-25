@@ -241,6 +241,10 @@ footer {
     animation: float 12s ease-in-out infinite;
 }
 
+.video-project {
+    margin: 1rem auto;
+}
+
 @keyframes float {
     0% {
         transform: translatey(0px);
