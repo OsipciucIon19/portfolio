@@ -1,8 +1,23 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import Typed from 'react-typed';
 import video from '../../assets/videos/gandac.webm'
 
 const PersonalInfo = ({display}) => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (display) {
+      videoRef.current.currentTime = 30;
+      if (!(video.currentTime > 0 && !video.paused && !video.ended
+        && video.readyState > video.HAVE_CURRENT_DATA)) {
+        videoRef.current.play()
+      }
+    } else {
+      setTimeout(() => {
+        videoRef.current.pause()
+      }, 100)
+    }
+  }, [display])
 
   return (
     <section className={`content-block ${display && "show"}`}>
@@ -21,7 +36,7 @@ const PersonalInfo = ({display}) => {
             typeSpeed={0}
           ></Typed></p>
       </div>
-      <video width="400" src={video} controlsList="nodownload" autoPlay loop muted />
+      <video ref={videoRef} width="400" src={video} controlsList="nodownload" autoPlay loop muted />
     </section>
   );
 }
