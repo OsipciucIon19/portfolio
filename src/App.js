@@ -12,7 +12,7 @@ const App = () => {
   const [selectedMenu, setSelectedMenu] = useState("personal-info")
 
   useEffect(() => {
-    loadDataFromJson('/data.json').then(r => setData(r))
+    loadDataFromJson('https://raw.githubusercontent.com/OsipciucIon19/portfolio/master/public/data.json').then(r => setData(r))
   }, [])
 
   const callback = (name) => {
