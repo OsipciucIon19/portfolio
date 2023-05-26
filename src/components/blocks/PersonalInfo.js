@@ -3,6 +3,7 @@ import video from '../../assets/videos/bug.webm'
 import videoMP4 from '../../assets/videos/bug.mp4'
 import {handleVideo} from "../../utils/handleVideo";
 import {detectIOS} from "../../utils/detectIOS";
+import ExperienceTimeline from "./ExperienceTimeline";
 
 const PersonalInfo = ({display}) => {
   const videoRef = useRef(null);
@@ -32,9 +33,10 @@ const PersonalInfo = ({display}) => {
             <p className="info-bug"><i>* I hope this is the only bug you'll see in my projects :)</i></p>
           </div>
         </div>
-        <div onClick={() => setIsFlipped(true)} className={`back-face ${isFlipped && "back-face-flipped"}`}>
+        <div className={`back-face ${isFlipped && "back-face-flipped"}`}>
           <div className="content-block-text">
-            <h1>TO BE CONTINUED</h1>
+            <button onClick={() => setIsFlipped(true)}>X</button>
+            <ExperienceTimeline />
           </div>
         </div>
 
