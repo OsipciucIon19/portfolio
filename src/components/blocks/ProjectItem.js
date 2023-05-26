@@ -44,9 +44,11 @@ function ProjectItem({display, project}) {
         src={findVideoPath(project.id)}
         controlsList="nodownload"
         autoPlay
+        controls="true"
         loop
         muted
         playsinline
+        data-test="test"
       />
 
     </section>
