@@ -4,7 +4,7 @@ import groceryCart from '../../assets/videos/grocery-cart.webm'
 import msc from '../../assets/videos/msc.webm'
 import findACoach from '../../assets/videos/find-a-coach.webm'
 import github from "../../assets/images/github.svg";
-import video from "../../assets/videos/gandac.webm";
+import {handleVideo} from "../../utils/handleVideo";
 
 function ProjectItem({display, project}) {
   const videoRef = useRef(null);
@@ -26,17 +26,7 @@ function ProjectItem({display, project}) {
   }
 
   useEffect(() => {
-    if (display) {
-      videoRef.current.currentTime = 30;
-      if (!(video.currentTime > 0 && !video.paused && !video.ended
-        && video.readyState > video.HAVE_CURRENT_DATA)) {
-        videoRef.current.play()
-      }
-    } else {
-      setTimeout(() => {
-        videoRef.current.pause()
-      }, 100)
-    }
+    videoRef.current = handleVideo(videoRef, display)
   }, [display])
 
 

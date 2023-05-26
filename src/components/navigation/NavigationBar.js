@@ -34,8 +34,10 @@ const NavigationBar = ({handleClick}) => {
   }
   return (
     <nav>
-      <div className="gradient-box">
-        <img className="logo-image" src={logo} width="60" onClick={() => handleButton()} alt="logo"></img>
+      <div className="logo-container">
+        <div className="gradient-box">
+          <img className="logo-image" src={logo} width="60" onClick={() => handleButton()} alt="logo"></img>
+        </div>
       </div>
       <NavigationLinks links={links}/>
     </nav>
