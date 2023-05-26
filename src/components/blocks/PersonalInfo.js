@@ -1,6 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 import video from '../../assets/videos/bug.webm'
+import videoMP4 from '../../assets/videos/bug.mp4'
 import {handleVideo} from "../../utils/handleVideo";
+import {detectIOS} from "../../utils/detectIOS";
 
 const PersonalInfo = ({display}) => {
   const videoRef = useRef(null);
@@ -25,8 +27,8 @@ const PersonalInfo = ({display}) => {
             <p className="gradient">
               Tap the card to view more information about me
             </p>
-            <video className="personal-info-video" ref={videoRef} width="400" src={video} controlsList="nodownload"
-                   autoPlay loop muted playsInline/>
+            <video className="personal-info-video" ref={videoRef} width="400" src={detectIOS() ? videoMP4 : video} controlsList="nodownload"
+                   autoPlay loop muted playsInline />
             <p className="info-bug"><i>* I hope this is the only bug you'll see in my projects :)</i></p>
           </div>
         </div>
