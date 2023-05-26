@@ -1,18 +1,23 @@
 import React, {useEffect, useRef} from 'react';
 import meditatio from '../../assets/videos/meditatio.webm'
+import meditatioMP4 from '../../assets/videos/meditatio.mp4'
 import groceryCart from '../../assets/videos/grocery-cart.webm'
+import groceryCartMP4 from '../../assets/videos/grocery-cart.mp4'
 import msc from '../../assets/videos/msc.webm'
+import mscMP4 from '../../assets/videos/msc.mp4'
 import findACoach from '../../assets/videos/find-a-coach.webm'
+import findACoachMP4 from '../../assets/videos/find-a-coach.mp4'
 import github from "../../assets/images/github.svg";
 import {handleVideo} from "../../utils/handleVideo";
+import {detectIOS} from "../../utils/detectIOS";
 
 function ProjectItem({display, project}) {
   const videoRef = useRef(null);
   const map = [
-    {key: "meditatio", path: meditatio},
-    {key: "grocery-cart", path: groceryCart},
-    {key: "msc-everywhere", path: msc},
-    {key: "find-a-coach", path: findACoach}
+    {key: "meditatio", path: detectIOS() ? meditatioMP4 : meditatio},
+    {key: "grocery-cart", path: detectIOS() ? groceryCartMP4 : groceryCart},
+    {key: "msc-everywhere", path: detectIOS() ? mscMP4 : msc},
+    {key: "find-a-coach", path: detectIOS() ? findACoachMP4 : findACoach}
   ]
 
   const findVideoPath = (id) => {
@@ -44,7 +49,6 @@ function ProjectItem({display, project}) {
         src={findVideoPath(project.id)}
         controlsList="nodownload"
         autoPlay
-        controls="true"
         loop
         muted
         playsInline
