@@ -25,7 +25,7 @@ const PersonalInfo = ({display}) => {
             <p className="gradient">
               Tap the card to view more information about me
             </p>
-            <video className="personal-info-video" ref={videoRef} width="400" src={video} controlsList="nodownload"
+            <video controls="true" className="personal-info-video" ref={videoRef} width="400" src={video} controlsList="nodownload"
                    autoPlay loop muted playsinline/>
             <p className="info-bug"><i>* I hope this is the only bug you'll see in my projects :)</i></p>
           </div>
