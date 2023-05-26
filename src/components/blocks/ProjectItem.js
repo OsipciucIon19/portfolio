@@ -46,6 +46,7 @@ function ProjectItem({display, project}) {
         autoPlay
         loop
         muted
+        playsinline
       />
 
     </section>
