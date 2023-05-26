@@ -47,7 +47,7 @@ function ProjectItem({display, project}) {
         controls="true"
         loop
         muted
-        playsinline
+        playsInline
         data-test="test"
       />
 
