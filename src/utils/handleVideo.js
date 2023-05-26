@@ -5,12 +5,12 @@ export const handleVideo = (video, display) => {
       && video.current.readyState > video.current.HAVE_CURRENT_DATA)) {
       setTimeout(() => {
         video.current.play()
-      }, 100)
+      }, 300)
     }
   } else {
     setTimeout(() => {
       video.current.pause()
-    }, 100)
+    }, 300)
   }
   return video.current
 }

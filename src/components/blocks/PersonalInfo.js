@@ -1,5 +1,4 @@
 import React, {useEffect, useRef, useState} from 'react';
-import Typed from 'react-typed';
 import video from '../../assets/videos/bug.webm'
 import {handleVideo} from "../../utils/handleVideo";
 
@@ -20,19 +19,11 @@ const PersonalInfo = ({display}) => {
           <div className="content-block-text">
             <h1>Welcome!</h1>
             <p>
-              <Typed
-                strings={["My name is Ion and I'm a programmer\n" +
-                "specialized in developing\n" +
-                "modern and efficient web\n" +
-                "applications. I am looking\n" +
-                "for a friendly team where\n" +
-                "we can develop together\n" +
-                "effective solutions for\n" +
-                "the IT field."]}
-                typeSpeed={0}
-              ></Typed></p>
+              My name is Ion and I'm a programmer specialized in developing modern and efficient web applications. I am
+              looking for a friendly team where we can develop together effective solutions for the IT field.
+            </p>
             <p className="gradient">
-              Tap on the card to view more information about me
+              Tap the card to view more information about me
             </p>
             <video className="personal-info-video" ref={videoRef} width="400" src={video} controlsList="nodownload"
                    autoPlay loop muted/>
@@ -41,7 +32,7 @@ const PersonalInfo = ({display}) => {
         </div>
         <div onClick={() => setIsFlipped(true)} className={`back-face ${isFlipped && "back-face-flipped"}`}>
           <div className="content-block-text">
-            <h1>Welcome!</h1>
+            <h1>TO BE CONTINUED</h1>
           </div>
         </div>
 
