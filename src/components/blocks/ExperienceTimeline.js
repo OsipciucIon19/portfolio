@@ -8,7 +8,7 @@ const ExperienceTimeline = () => {
       <div className="experience">
         <div className="legend">
           <div className="education">
-            <h5>Education:</h5>
+            <h4>Education:</h4>
             <ul className="education-list">
               <li className="legend-item">
                 <span className="period-legend lyceum"/>
@@ -31,7 +31,7 @@ const ExperienceTimeline = () => {
             </ul>
           </div>
           <div className="work">
-            <h5>Work:</h5>
+            <h4>Work:</h4>
             <ul className="work-list">
               <li className="legend-item">
                 <span className="period-legend internship"/>
