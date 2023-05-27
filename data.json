@@ -15,7 +15,7 @@
     {
       "id": "msc-everywhere",
       "name": "msc:everywhere",
-      "description": "This application is designed for music storage and playback. It was developed using the jQuery framework, which facilitates communication with server endpoints implemented in PHP.",
+      "description": "This application is designed for music storage and playback. It was developed using the jQuery library, which facilitates communication with server endpoints implemented in PHP.",
       "gitHubLink": "test link"
     },
     {
