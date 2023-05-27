@@ -4,7 +4,7 @@ import "../../assets/styles/languages.css"
 const Languages = () => {
   return (
     <div className="languages-wrapper">
-      <h3>Spoken languages</h3>
+      <h2>Spoken languages</h2>
       <div className="languages">
         <div className="levels-legend">
           <span className="level-placeholder" />

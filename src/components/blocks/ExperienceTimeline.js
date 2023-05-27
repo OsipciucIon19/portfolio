@@ -4,11 +4,11 @@ import "../../assets/styles/timeline.css";
 const ExperienceTimeline = () => {
   return (
     <div className="experience-wrapper">
-      <h3>Experience Timeline</h3>
+      <h2>Experience Timeline</h2>
       <div className="experience">
         <div className="legend">
           <div className="education">
-            <h4>Education:</h4>
+            <div className="experience-type-title">Education:</div>
             <ul className="education-list">
               <li className="legend-item">
                 <span className="period-legend lyceum"/>
@@ -31,7 +31,7 @@ const ExperienceTimeline = () => {
             </ul>
           </div>
           <div className="work">
-            <h4>Work:</h4>
+            <div className="experience-type-title">Work:</div>
             <ul className="work-list">
               <li className="legend-item">
                 <span className="period-legend internship"/>
