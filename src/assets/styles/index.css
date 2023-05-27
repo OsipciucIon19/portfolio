@@ -146,6 +146,17 @@ nav {
     transform: rotateY(-90deg);
 }
 
+.close-button {
+    background-image: linear-gradient(-45deg, #8739f9, #37b8f1);
+    color: white;
+    border-radius: 1000px;
+    padding: 2px 7px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: bold;
+}
+
 .content-block-text h1 {
     margin: 1rem auto;
     text-align: center;

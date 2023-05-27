@@ -39,7 +39,7 @@ const App = () => {
       <NavigationBar handleClick={navigationBarHandler}/>
       <div className={`hint gradient ${isHintDisplayed && "hint-visible"}`}>
         <img className="arrow" src={arrow} width="20" alt="arrow"/>
-        <span className="hint-text">Click on the photo to go back to welcome card</span>
+        <span className="hint-text">Click on the photo to return to the welcome card</span>
       </div>
       <div className="main-block">
         <ProjectList projects={data?.projects || []} handleClick={projectListHandler}/>

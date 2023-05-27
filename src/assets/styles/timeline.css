@@ -5,11 +5,14 @@
 .legend {
     display: flex;
     justify-content: space-around;
-    margin: 1rem 0;
 }
 
 .education, .work {
     width: 50%;
+}
+
+.education h5, .work h5 {
+    text-align: center;
 }
 
 .legend-item {
@@ -52,10 +55,9 @@
 }
 
 #timeline {
-    transform: scale(1.7) translateY(1rem);
     position: relative;
     margin: 0 auto;
-    width: 175px;
+    width: 100%;
     height: 50px;
 }
 
@@ -63,8 +65,8 @@
     position: absolute;
     top: 20px;
     height: 2px;
-    width: 175px;
-    background: #37b8f1;
+    width: 100%;
+    background-image: linear-gradient(-45deg, #8739f9, #37b8f1);
     border-radius: 100px;
 }
 
@@ -76,51 +78,51 @@
 
 .period.lyceum {
     background: #ffc76f;
-    width: 55px;
+    width: 36%;
     top: 10px;
-    left: 20px;
+    left: 8%;
 }
 
 .period.university {
     background: #014b87;
-    width: 77px;
+    width: 38%;
     top: 10px;
-    left: 82px;
+    left: 47%;
 }
 
 .period.internship {
     background: #ed561d;
-    width: 10px;
+    width: 4%;
     top: 0;
-    left: 89px;
+    left: 53%;
 }
 
 .period.pentalog {
     background: #0a7af8;
-    width: 49px;
+    width: 25%;
     top: 0;
-    left: 101px;
+    left: 58%;
 }
 
 .year {
     transform: rotate(45deg);
     position: absolute;
-    top: 10px;
-    font-size: 6pt;
+    top: 15px;
+    font-size: 7pt;
     font-weight: bold;
 }
 
 .year-2016 {
-    left: 0;
+    left: 9%;
 }
 .year-2019 {
-    left: 60px;
+    left: 39%;
 }
 .year-2020 {
-    left: 80px;
+    left: 49%;
 }
 .year-2023 {
-    left: 140px;
+    left: 79%;
 }
 
 .bullet {
@@ -132,37 +134,37 @@
 }
 
 .bullet-2016 {
-    left: 5px;
+    left: 10%;
 }
 .bullet-2017 {
-    left: 25px;
+    left: 20%;
 
 }
 .bullet-2018 {
-    left: 45px;
+    left: 30%;
 
 }
 .bullet-2019 {
-    left: 65px;
+    left: 40%;
 
 }
 .bullet-2020 {
-    left: 85px;
+    left: 50%;
 
 }
 .bullet-2021 {
-    left: 105px;
+    left: 60%;
 
 }
 .bullet-2022 {
-    left: 125px;
+    left: 70%;
 
 }
 .bullet-2023 {
-    left: 145px;
+    left: 80%;
 }
 .bullet-2024 {
-    left: 165px;
+    left: 90%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -170,13 +172,11 @@
         flex-direction: column;
     }
 
+    .legend-item {
+        padding: .1rem 0;
+    }
+
     .education, .work {
         width: 100%;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    #timeline {
-        transform: scale(1.2);
     }
 }

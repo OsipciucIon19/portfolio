@@ -1,0 +1,75 @@
+.languages-wrapper {
+    margin: 1rem;
+    width: 50%;
+}
+
+.levels-legend {
+    display: flex;
+    flex-direction: row;
+}
+
+.level-placeholder {
+    display: inline-block;
+    position: relative;
+    min-width: 70px;
+    height: 9pt;
+    margin-right: 1rem;
+}
+
+.levels {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.level {
+    font-size: 8pt;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    cursor: initial;
+}
+
+.language-title {
+    font-size: 10pt;
+    min-width: 70px;
+    margin-right: 1rem;
+}
+
+.progress-bg {
+    position: relative;
+    width: 80%;
+    height: 2px;
+    background: #a6a6a6;
+    border-radius: 100px;
+}
+
+.progress-fill {
+    position: absolute;
+    height: 2px;
+    background-image: linear-gradient(-45deg, #8739f9, #37b8f1);
+    border-radius: 100px 0 0 100px;
+}
+
+.progress-fill.romanian {
+    width: 100%;
+}
+
+.progress-fill.russian {
+    width: 100%;
+}
+
+.progress-fill.english {
+    width: 7%;
+}
+
+.progress-fill.french {
+    width: 30%;
+}
+@media only screen and (max-width: 768px) {
+    .languages-wrapper {
+        width: 80%;
+    }
+}

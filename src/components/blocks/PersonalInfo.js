@@ -4,6 +4,7 @@ import videoMP4 from '../../assets/videos/bug.mp4'
 import {handleVideo} from "../../utils/handleVideo";
 import {detectIOS} from "../../utils/detectIOS";
 import ExperienceTimeline from "./ExperienceTimeline";
+import Languages from "./Languages";
 
 const PersonalInfo = ({display}) => {
   const videoRef = useRef(null);
@@ -35,7 +36,8 @@ const PersonalInfo = ({display}) => {
         </div>
         <div className={`back-face ${isFlipped && "back-face-flipped"}`}>
           <div className="content-block-text">
-            <button onClick={() => setIsFlipped(true)}>X</button>
+            <button className="close-button" onClick={() => setIsFlipped(true)}>&#x2715;</button>
+            <Languages />
             <ExperienceTimeline />
           </div>
         </div>
