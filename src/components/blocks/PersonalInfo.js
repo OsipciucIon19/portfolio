@@ -33,9 +33,7 @@ const PersonalInfo = ({display}) => {
             <p className={`${isDarkTheme && "light-text"}`}>
               My name is Ion and I'm a programmer specialized in developing modern and efficient web applications.
             </p>
-            <p className="info-text gradient">
-              <img className="click-icon" src={clickIcon} width="15" alt="Click here" />Tap the card to view more information about me
-            </p>
+            <p className={`info-bug ${isDarkTheme && "light-text"}`}>* I hope this is the only bug you'll see in my projects :)</p>
             <video
               className="personal-info-video"
               ref={videoRef}
@@ -44,7 +42,9 @@ const PersonalInfo = ({display}) => {
               controlsList="nodownload"
               autoPlay loop muted playsInline
             />
-            <p className={`info-bug ${isDarkTheme && "light-text"}`}><i>* I hope this is the only bug you'll see in my projects :)</i></p>
+            <p className="info-text gradient">
+              <img className="click-icon" src={clickIcon} width="15" alt="Click here" />Tap the card to view more information about me
+            </p>
           </div>
         </div>
         <div className={`back-face ${isFlipped && "back-face-flipped"} ${isDarkTheme && "light-shadow"}`}>
