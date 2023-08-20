@@ -22,7 +22,7 @@
 }
 
 .period-legend {
-    width: 4px;
+    min-width: 4px;
     display: flex;
     margin-right: 0.3rem;
     border-radius: 100px;
