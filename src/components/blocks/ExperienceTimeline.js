@@ -54,7 +54,7 @@ const ExperienceTimeline = () => {
                 <span className="period-legend orange"/>
                 <div className={`period-legend-text ${isDarkTheme && "light-text"}`}>
                   <div className="period-legend-title">Orange Slovensko</div>
-                  <div className="period-legend-subtitle">IoT DevOps Engineer</div>
+                  <div className="period-legend-subtitle">DevOps Engineer</div>
                 </div>
               </li>
             </ul>
@@ -67,18 +67,16 @@ const ExperienceTimeline = () => {
           <span className="period pentalog"/>
           <span className="period orange"/>
           <span id="main-axe">
-          <span className="bullet bullet-2016"/>
-          <span className="year gradient year-2016">2016 </span>
+          <div className="bullet bullet-2016">
+            <span className="year">2016</span>
+          </div>
           <span className="bullet bullet-2017"/>
           <span className="bullet bullet-2018"/>
           <span className="bullet bullet-2019"/>
-          <span className="year gradient year-2019">2019</span>
           <span className="bullet bullet-2020"/>
-          <span className="year gradient year-2020">2020</span>
           <span className="bullet bullet-2021"/>
           <span className="bullet bullet-2022"/>
           <span className="bullet bullet-2023"/>
-          <span className="year gradient year-2023">2023</span>
           <span className="bullet bullet-2024"/>
         </span>
         </div>

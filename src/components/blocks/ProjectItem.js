@@ -38,11 +38,16 @@ function ProjectItem({display, project}) {
 
 
   return (
-    <section className={`content-block ${display && "show"}`}>
+    <section className={`content-block ${display && "show"} ${isDarkTheme && "light-shadow"}`}>
       <h1 className={`project-title ${isDarkTheme && "light-text"}`}>{project.name}</h1>
       <p className={`project-description ${isDarkTheme && "light-text"}`}>{project.description}</p>
-      <div className="project-button">
-        <a className="project-link" href={project.gitHubLink}>View GitHub Code <img width={20} src={github} alt="github"/></a>
+      <div className={`project-button ${isDarkTheme && "dark-bg"}`}>
+        <a
+          className={`project-link ${isDarkTheme && "light-text"}`}
+          href={project.gitHubLink}
+        >
+          View GitHub Code <img className={`${isDarkTheme && "light-svg"}`} width={20} src={github} alt="github"/>
+        </a>
       </div>
       <video
         ref={videoRef}

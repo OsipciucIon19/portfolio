@@ -150,7 +150,7 @@ nav {
     background-image: linear-gradient(-45deg, #8739f9, #37b8f1);
     color: white;
     border-radius: 1000px;
-    padding: 2px 6px;
+    padding: 2px 7px;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -455,6 +455,14 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
+    .container {
+        padding: .5rem 1rem;
+    }
+
+    .main-block {
+        margin-top: .5rem;
+    }
+
     .content-block {
         width: 100%;
     }
@@ -476,7 +484,11 @@ footer {
     }
 
     .navigation-links li {
-        margin-left: 2rem;
+        margin-left: 1.2rem;
+    }
+
+    .languages-wrapper h2, .experience-wrapper h2 {
+        font-size: 16pt;
     }
 }
 

@@ -1,5 +1,5 @@
 .experience-wrapper {
-    margin: 1rem;
+    margin: .1rem 1rem 1rem 1rem;
 }
 
 .legend {
@@ -18,7 +18,7 @@
 .legend-item {
     cursor: initial;
     display: flex;
-    padding: .5rem;
+    padding: .2rem;
 }
 
 .period-legend {
@@ -115,24 +115,16 @@
 }
 
 .year {
-    transform: rotate(45deg);
     position: absolute;
-    top: 15px;
-    font-size: 7pt;
+    font-size: 10pt;
     font-weight: bold;
-}
-
-.year-2016 {
-    left: 9%;
-}
-.year-2019 {
-    left: 39%;
-}
-.year-2020 {
-    left: 49%;
-}
-.year-2023 {
-    left: 79%;
+    background-image: -webkit-linear-gradient(-45deg, #8739f9, #37b8f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1px 4px;
+    border-left: 3px solid #37b8f1;
+    border-bottom: 3px solid #37b8f1;
+    border-radius: 5px;
 }
 
 .bullet {
@@ -188,5 +180,15 @@
 
     .education, .work {
         width: 100%;
+    }
+
+    .year {
+        font-size: 8pt;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .year {
+        font-size: 6pt;
     }
 }

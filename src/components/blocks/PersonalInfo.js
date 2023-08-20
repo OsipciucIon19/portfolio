@@ -23,7 +23,10 @@ const PersonalInfo = ({display}) => {
   return (
     <>
       <section className={`content-block personal-info-block ${display && "show"}`}>
-        <div onClick={() => setIsFlipped(false)} className={`front-face ${!isFlipped && "front-face-flipped"}`}>
+        <div
+          onClick={() => setIsFlipped(false)}
+          className={`front-face ${!isFlipped && "front-face-flipped"} ${isDarkTheme && "light-shadow"}`}
+        >
           <div className="content-block-text">
             <h1>Welcome!</h1>
             <p className={`${isDarkTheme && "light-text"}`}>
@@ -43,7 +46,7 @@ const PersonalInfo = ({display}) => {
             <p className={`info-bug ${isDarkTheme && "light-text"}`}><i>* I hope this is the only bug you'll see in my projects :)</i></p>
           </div>
         </div>
-        <div className={`back-face ${isFlipped && "back-face-flipped"}`}>
+        <div className={`back-face ${isFlipped && "back-face-flipped"} ${isDarkTheme && "light-shadow"}`}>
           <div className="content-block-text">
             <button className="close-button" onClick={() => setIsFlipped(true)}>&#x2715;</button>
             <Languages />
