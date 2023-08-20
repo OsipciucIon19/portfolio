@@ -161,8 +161,6 @@ nav {
     margin: 1rem auto;
     text-align: center;
     font-family: CenturyGothicBold, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 6px;
     font-size: 40pt;
     background-image: -webkit-linear-gradient(-45deg, #8739f9, #37b8f1);
     -webkit-background-clip: text;
