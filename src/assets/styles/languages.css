@@ -1,6 +1,6 @@
 .languages-wrapper {
     margin: 1rem;
-    width: 50%;
+    /*width: 50%;*/
 }
 
 .levels-legend {
@@ -62,14 +62,14 @@
 }
 
 .progress-fill.english {
-    width: 7%;
+    width: 37%;
 }
 
 .progress-fill.french {
     width: 37%;
 }
 @media only screen and (max-width: 768px) {
-    .languages-wrapper {
-        width: 80%;
-    }
+    /*.languages-wrapper {*/
+    /*    width: 80%;*/
+    /*}*/
 }

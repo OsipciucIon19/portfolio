@@ -10,6 +10,7 @@ import findACoachMP4 from '../../assets/videos/find-a-coach.mp4'
 import github from "../../assets/images/github.svg";
 import {handleVideo} from "../../utils/handleVideo";
 import {detectIOS} from "../../utils/detectIOS";
+import {useDarkTheme} from "../../context/DarkThemeContext";
 
 function ProjectItem({display, project}) {
   const videoRef = useRef(null);
@@ -19,6 +20,7 @@ function ProjectItem({display, project}) {
     {key: "msc-everywhere", path: detectIOS() ? mscMP4 : msc},
     {key: "find-a-coach", path: detectIOS() ? findACoachMP4 : findACoach}
   ]
+  const {isDarkTheme} = useDarkTheme();
 
   const findVideoPath = (id) => {
     let path = ""
@@ -37,8 +39,8 @@ function ProjectItem({display, project}) {
 
   return (
     <section className={`content-block ${display && "show"}`}>
-      <h1 className="project-title">{project.name}</h1>
-      <p className="project-description">{project.description}</p>
+      <h1 className={`project-title ${isDarkTheme && "light-text"}`}>{project.name}</h1>
+      <p className={`project-description ${isDarkTheme && "light-text"}`}>{project.description}</p>
       <div className="project-button">
         <a className="project-link" href={project.gitHubLink}>View GitHub Code <img width={20} src={github} alt="github"/></a>
       </div>

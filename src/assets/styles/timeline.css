@@ -23,7 +23,6 @@
 
 .period-legend {
     width: 4px;
-    height: 45px;
     display: flex;
     margin-right: 0.3rem;
     border-radius: 100px;
@@ -45,6 +44,10 @@
     background: #0a7af8;
 }
 
+.period-legend.orange {
+    background: #ff7900;
+}
+
 .period-legend-title {
     font-size: 10pt;
     font-weight: 600;
@@ -56,7 +59,7 @@
 
 #timeline {
     position: relative;
-    margin: 0 auto;
+    margin: 0.5rem auto;
     width: 100%;
     height: 50px;
 }
@@ -102,6 +105,13 @@
     width: 25%;
     top: 0;
     left: 58%;
+}
+
+.period.orange {
+    background: #ff7900;
+    width: 3%;
+    top: 0;
+    left: 86%;
 }
 
 .year {

@@ -7,6 +7,7 @@ import ProjectList from "./components/blocks/ProjectList";
 import ProjectItem from "./components/blocks/ProjectItem";
 import Background from "./components/blocks/Background";
 import arrow from "./assets/images/arrow.svg";
+import {useDarkTheme} from "./context/DarkThemeContext";
 
 let FLAG = true;
 
@@ -14,6 +15,13 @@ const App = () => {
   const [data, setData] = useState(null);
   const [selectedMenu, setSelectedMenu] = useState("personal-info")
   const [isHintDisplayed, setIsHintDisplayed] = useState(false);
+  const { isDarkTheme } = useDarkTheme();
+
+  if (isDarkTheme) {
+    document.body.className = "dark-bg"
+  } else {
+    document.body.className = ""
+  }
 
   useEffect(() => {
     loadDataFromJson('https://raw.githubusercontent.com/OsipciucIon19/portfolio/master/public/data.json').then(r => setData(r))
@@ -32,14 +40,13 @@ const App = () => {
     }
   }
 
-
   return (
-    <div className="container">
+    <div className={`container ${isDarkTheme && "light-border"}`}>
       <Background/>
       <NavigationBar handleClick={navigationBarHandler}/>
       <div className={`hint gradient ${isHintDisplayed && "hint-visible"}`}>
         <img className="arrow" src={arrow} width="20" alt="arrow"/>
-        <span className="hint-text">Click on the photo to return to the welcome card</span>
+        <span className="hint-text">Click on the photo to return to welcome card</span>
       </div>
       <div className="main-block">
         <ProjectList projects={data?.projects || []} handleClick={projectListHandler}/>
