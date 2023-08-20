@@ -168,6 +168,17 @@ nav {
     -webkit-animation: hue 10s infinite linear;
 }
 
+.info-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.click-icon {
+    padding-right: .5rem;
+}
+
 .content-block-text p {
     margin: 1rem;
     text-align: center;

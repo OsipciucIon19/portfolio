@@ -8,6 +8,7 @@ import {detectIOS} from "../../utils/detectIOS";
 import ExperienceTimeline from "./ExperienceTimeline";
 import Languages from "./Languages";
 import {useDarkTheme} from "../../context/DarkThemeContext";
+import clickIcon from "../../assets/images/click-icon.svg";
 
 const PersonalInfo = ({display}) => {
   const videoRef = useRef(null);
@@ -32,8 +33,8 @@ const PersonalInfo = ({display}) => {
             <p className={`${isDarkTheme && "light-text"}`}>
               My name is Ion and I'm a programmer specialized in developing modern and efficient web applications.
             </p>
-            <p className="gradient">
-              Tap the card to view more information about me
+            <p className="info-text gradient">
+              <img className="click-icon" src={clickIcon} width="15" alt="Click here" />Tap the card to view more information about me
             </p>
             <video
               className="personal-info-video"
