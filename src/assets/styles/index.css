@@ -506,3 +506,21 @@ footer {
         overflow-y: initial;
     }
 }
+
+@media only screen and (min-width: 1024px) {
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #292929;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #f1f1f1;
+    }
+}
