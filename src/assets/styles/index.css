@@ -316,6 +316,7 @@ footer {
 .project-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .project-title {
@@ -325,6 +326,9 @@ footer {
 .project-like-button {
     display: flex;
     margin: 1rem;
+    padding: 3px 4px;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
 .project-like-button-content {
@@ -401,7 +405,8 @@ footer {
 }
 
 .arrow {
-    transform: rotate(90deg);
+    /*transform: rotate(90deg);*/
+    padding: 0 .5rem;
 }
 
 .hint-text {

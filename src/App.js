@@ -6,7 +6,7 @@ import PersonalInfo from "./components/blocks/PersonalInfo";
 import ProjectList from "./components/blocks/ProjectList";
 import ProjectItem from "./components/blocks/ProjectItem";
 import Background from "./components/blocks/Background";
-import arrow from "./assets/images/arrow.svg";
+import clickIcon from "./assets/images/click-icon.svg";
 import {useDarkTheme} from "./context/DarkThemeContext";
 
 let FLAG = true;
@@ -45,7 +45,7 @@ const App = () => {
       <Background/>
       <NavigationBar handleClick={navigationBarHandler}/>
       <div className={`hint gradient ${isHintDisplayed && "hint-visible"}`}>
-        <img className="arrow" src={arrow} width="20" alt="arrow"/>
+        <img className="arrow" src={clickIcon} width="10" alt="arrow"/>
         <span className="hint-text">Click on the photo to return to welcome card</span>
       </div>
       <div className="main-block">

@@ -39,7 +39,7 @@ const LikeButton = ({itemId}) => {
   };
 
   return (
-    <div className="project-like-button">
+    <div className={`project-like-button ${isDarkTheme && "dark-bg"}`}>
       <div className={`project-like-button-content ${isDarkTheme && "light-text"}`}>
         <span className="project-like-button-number">{likeCount}</span>
         <div className="project-like-button-text">

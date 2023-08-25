@@ -16,7 +16,7 @@
 }
 
 .levels {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -39,7 +39,7 @@
 
 .progress-bg {
     position: relative;
-    width: 80%;
+    width: 100%;
     height: 2px;
     background: #a6a6a6;
     border-radius: 100px;
@@ -61,9 +61,9 @@
 }
 
 .progress-fill.english {
-    width: 37%;
+    width: 34%;
 }
 
 .progress-fill.french {
-    width: 37%;
+    width: 34%;
 }
