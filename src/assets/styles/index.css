@@ -313,8 +313,34 @@ footer {
     margin: 1rem auto;
 }
 
+.project-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .project-title {
     margin: 1rem;
+}
+
+.project-like-button {
+    display: flex;
+    margin: 1rem;
+}
+
+.project-like-button-content {
+    display: flex;
+    align-items: center;
+}
+
+.project-like-button-number {
+    font-size: 20pt;
+}
+
+.project-like-button-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 8pt;
+    padding: 0 0.3rem;
 }
 
 .project-description {

@@ -11,6 +11,7 @@ import github from "../../assets/images/github.svg";
 import {handleVideo} from "../../utils/handleVideo";
 import {detectIOS} from "../../utils/detectIOS";
 import {useDarkTheme} from "../../context/DarkThemeContext";
+import LikeButton from "./LikeButton";
 
 function ProjectItem({display, project}) {
   const videoRef = useRef(null);
@@ -39,7 +40,10 @@ function ProjectItem({display, project}) {
 
   return (
     <section className={`content-block ${display && "show"} ${isDarkTheme && "light-shadow"}`}>
-      <h1 className={`project-title ${isDarkTheme && "light-text"}`}>{project.name}</h1>
+      <div className={"project-header"}>
+        <h1 className={`project-title ${isDarkTheme && "light-text"}`}>{project.name}</h1>
+        <LikeButton itemId={project.id} />
+      </div>
       <p className={`project-description ${isDarkTheme && "light-text"}`}>{project.description}</p>
       <div className={`project-button ${isDarkTheme && "dark-bg"}`}>
         <a
