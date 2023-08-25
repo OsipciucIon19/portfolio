@@ -9,6 +9,8 @@ import ExperienceTimeline from "./ExperienceTimeline";
 import Languages from "./Languages";
 import {useDarkTheme} from "../../context/DarkThemeContext";
 import clickIcon from "../../assets/images/click-icon.svg";
+import placeholderLight from "../../assets/images/bug-placeholder-light.png";
+import placeholderDark from "../../assets/images/bug-placeholder-dark.png";
 
 const PersonalInfo = ({display}) => {
   const videoRef = useRef(null);
@@ -41,6 +43,7 @@ const PersonalInfo = ({display}) => {
               src={detectIOS() ? (isDarkTheme ? darkVideoMP4 : videoMP4) : (isDarkTheme ? darkVideo : video)}
               controlsList="nodownload"
               autoPlay loop muted playsInline
+              poster={isDarkTheme ? placeholderDark : placeholderLight}
             />
             <p className="info-text gradient">
               <img className="click-icon" src={clickIcon} width="15" alt="Click here" />Tap the card to view more information about me
