@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.193552a9.css",
-    "main.js": "/portfolio/static/js/main.026c61b4.js",
+    "main.js": "/portfolio/static/js/main.35c1781d.js",
     "static/media/bug-dark.mp4": "/portfolio/static/media/bug-dark.f3a30d99b45f37243cf5.mp4",
     "static/media/bug.mp4": "/portfolio/static/media/bug.523b4a555edccd5aaea2.mp4",
     "static/media/meditatio.mp4": "/portfolio/static/media/meditatio.cc783b8c3588d3492cb5.mp4",
@@ -15,6 +15,8 @@
     "static/media/bug.webm": "/portfolio/static/media/bug.03cda045577b82980416.webm",
     "static/media/find-a-coach.webm": "/portfolio/static/media/find-a-coach.c766b02adddc0e75b791.webm",
     "static/media/bug-dark.webm": "/portfolio/static/media/bug-dark.32a1cdf1bcb2579f6a30.webm",
+    "static/media/bug-placeholder-light.png": "/portfolio/static/media/bug-placeholder-light.1bb4c8d4698a83e8a92e.png",
+    "static/media/bug-placeholder-dark.png": "/portfolio/static/media/bug-placeholder-dark.43ddebe897c9dee577ac.png",
     "static/media/gothicb-webfont.woff": "/portfolio/static/media/gothicb-webfont.42ef856ec03e9078bf9a.woff",
     "static/media/gothic-webfont.woff": "/portfolio/static/media/gothic-webfont.d6ea0e0112e6bb29abbb.woff",
     "static/media/gothicb-webfont.woff2": "/portfolio/static/media/gothicb-webfont.7175189b041bbb1933b6.woff2",
@@ -33,10 +35,10 @@
     "index.html": "/portfolio/index.html",
     "static/media/gmail.svg": "/portfolio/static/media/gmail.9f85e50d7f3c45dd6044168951d59399.svg",
     "main.193552a9.css.map": "/portfolio/static/css/main.193552a9.css.map",
-    "main.026c61b4.js.map": "/portfolio/static/js/main.026c61b4.js.map"
+    "main.35c1781d.js.map": "/portfolio/static/js/main.35c1781d.js.map"
   },
   "entrypoints": [
     "static/css/main.193552a9.css",
-    "static/js/main.026c61b4.js"
+    "static/js/main.35c1781d.js"
   ]
 }
