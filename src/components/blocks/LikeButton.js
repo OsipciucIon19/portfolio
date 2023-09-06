@@ -10,6 +10,7 @@ const LikeButton = ({itemId}) => {
   const [liked, setLiked] = useState(Cookies.get(`liked_${itemId}`) === 'true');
   const [likeCount, setLikeCount] = useState(0);
   const {isDarkTheme} = useDarkTheme();
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     loadDataFromJson(`https://portfolio-c1bbd-default-rtdb.europe-west1.firebasedatabase.app/${itemId}.json`)
@@ -18,23 +19,37 @@ const LikeButton = ({itemId}) => {
 
   const handleLike = async () => {
     if (!liked) {
-      Cookies.set(`liked_${itemId}`, 'true', {expires: 365 * 10});
-      await axios.patch(
-        `https://portfolio-c1bbd-default-rtdb.europe-west1.firebasedatabase.app/${itemId}.json`,
-        { likes: likeCount + 1 }
-      );
+      setIsLoading(true);
+      try {
+        Cookies.set(`liked_${itemId}`, 'true', {expires: 365 * 10});
+        await axios.patch(
+          `https://portfolio-c1bbd-default-rtdb.europe-west1.firebasedatabase.app/${itemId}.json`,
+          { likes: likeCount + 1 }
+        );
 
-      setLiked(true);
-      setLikeCount((prevState) => prevState + 1)
+        setLiked(true);
+        setLikeCount((prevState) => prevState + 1)
+      } catch (e) {
+        console.error(e)
+      } finally {
+        setIsLoading(false);
+      }
     } else {
-      Cookies.remove(`liked_${itemId}`);
-      await axios.patch(
-        `https://portfolio-c1bbd-default-rtdb.europe-west1.firebasedatabase.app/${itemId}.json`,
-        { likes: likeCount - 1 }
-      );
+      setIsLoading(true);
+      try {
+        Cookies.remove(`liked_${itemId}`);
+        await axios.patch(
+          `https://portfolio-c1bbd-default-rtdb.europe-west1.firebasedatabase.app/${itemId}.json`,
+          { likes: likeCount - 1 }
+        );
 
-      setLiked(false);
-      setLikeCount((prevState) => prevState - 1)
+        setLiked(false);
+        setLikeCount((prevState) => prevState - 1)
+      } catch (e) {
+        console.error(e);
+      } finally {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -49,6 +64,7 @@ const LikeButton = ({itemId}) => {
       </div>
       <button
         onClick={handleLike}
+        disabled={isLoading}
       >
         <img
           src={liked ? likedIcon : unlikedIcon}
