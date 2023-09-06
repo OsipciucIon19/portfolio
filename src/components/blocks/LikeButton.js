@@ -67,6 +67,7 @@ const LikeButton = ({itemId}) => {
         disabled={isLoading}
       >
         <img
+          className={isLoading && 'light-svg'}
           src={liked ? likedIcon : unlikedIcon}
           width="30"
           alt="like-button"
