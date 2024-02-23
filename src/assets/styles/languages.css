@@ -61,9 +61,13 @@
 }
 
 .progress-fill.english {
-    width: 34%;
+    width: 52%;
 }
 
 .progress-fill.french {
-    width: 34%;
+    width: 52%;
+}
+
+.progress-fill.slovak {
+    width: 3%;
 }

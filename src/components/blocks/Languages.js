@@ -12,6 +12,7 @@ const Languages = () => {
         <div className="levels-legend">
           <span className="level-placeholder" />
           <div className={`levels ${isDarkTheme && "light-text"}`}>
+            <span className="level">A2</span>
             <span className="level">B1</span>
             <span className="level">B2</span>
             <span className="level">C1</span>
@@ -41,6 +42,12 @@ const Languages = () => {
             <span className={`language-title  ${isDarkTheme && "light-text"}`}>French</span>
             <span className="progress-bg">
               <span className="progress-fill french" />
+            </span>
+          </li>
+          <li className="language-item">
+            <span className={`language-title  ${isDarkTheme && "light-text"}`}>Slovak</span>
+            <span className="progress-bg">
+              <span className="progress-fill slovak" />
             </span>
           </li>
         </ul>
