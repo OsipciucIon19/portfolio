@@ -6,8 +6,8 @@ import Model from "./Model";
 const PcCanvas = () => {
   const handleClick = (event) => {
     event.stopPropagation();
-    console.log("PcCanvas clicked");
   };
+  
   return (
     <Canvas
       onClick={handleClick}
