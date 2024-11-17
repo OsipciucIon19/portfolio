@@ -27,35 +27,35 @@ const ExperienceTimeline = () => {
       case 'lyceum':
         return {
           background: '#ffc76f',
-          top: '-30%',
+          top: '-15px',
           left: '15%',
           color: isDarkTheme ? '#000' : '#fff'
         }
       case 'university': 
         return {
           background: '#014b87',
-          top: '-30%',
+          top: '-15px',
           left: '42%',
           color: isDarkTheme ? '#000' : '#fff'
         }
       case 'internship':
         return {
           background: '#ed561d',
-          top: '-50%',
+          top: '-25px',
           left: '57%',
           color: isDarkTheme ? '#000' : '#fff'
         }
       case 'pentalog':
         return {
           background: '#0a7af8',
-          top: '-50%',
+          top: '-25px',
           left: '61.5%',
           color: isDarkTheme ? '#000' : '#fff'
         }
       case 'orange':
         return {
           background: '#ff7900',
-          top: '-50%',
+          top: '-25px',
           right: '0%',
           color: isDarkTheme ? '#000' : '#fff'
         }
@@ -90,6 +90,17 @@ const ExperienceTimeline = () => {
             <div className={`experience-type-title ${isDarkTheme && "light-text"}`}>Education:</div>
             <ul className="education-list">
               <li
+                className={`legend-item ${hoveredItems.includes('university') ? '' : 'no-hover'}`}
+                onMouseEnter={() => _handleHover('university')}
+                onMouseLeave={() => _handleUnhover()}
+              >
+                <span className="period-legend university"/>
+                <div className={`period-legend-text ${isDarkTheme && "light-text"}`}>
+                  <div className="period-legend-title">Technical University of Moldova</div>
+                  <div className="period-legend-subtitle">Information Technology (French Section)</div>
+                </div>
+              </li>
+              <li
                 className={`legend-item ${hoveredItems.includes('lyceum') ? '' : 'no-hover'}`}
                 onMouseEnter={() => _handleHover('lyceum')}
                 onMouseLeave={() => _handleUnhover()}
@@ -104,31 +115,20 @@ const ExperienceTimeline = () => {
                   </div>
                 </div>
               </li>
-              <li
-                className={`legend-item ${hoveredItems.includes('university') ? '' : 'no-hover'}`}
-                onMouseEnter={() => _handleHover('university')}
-                onMouseLeave={() => _handleUnhover()}
-              >
-                <span className="period-legend university"/>
-                <div className={`period-legend-text ${isDarkTheme && "light-text"}`}>
-                  <div className="period-legend-title">Technical University of Moldova</div>
-                  <div className="period-legend-subtitle">Information Technology (French Section)</div>
-                </div>
-              </li>
             </ul>
           </div>
           <div className="work">
             <div className={`experience-type-title ${isDarkTheme && "light-text"}`}>Work:</div>
             <ul className="work-list">
-            <li
-                className={`legend-item ${hoveredItems.includes('internship') ? '' : 'no-hover'}`}
-                onMouseEnter={() => _handleHover('internship')}
+              <li
+                className={`legend-item ${hoveredItems.includes('orange') ? '' : 'no-hover'}`}
+                onMouseEnter={() => _handleHover('orange')}
                 onMouseLeave={() => _handleUnhover()}
               >
-                <span className="period-legend internship"/>
+                <span className="period-legend orange"/>
                 <div className={`period-legend-text ${isDarkTheme && "light-text"}`}>
-                  <div className="period-legend-title">Internship at Pentalog</div>
-                  <div className="period-legend-subtitle">Full-Stack Web Developer</div>
+                  <div className="period-legend-title">Orange Slovensko</div>
+                  <div className="period-legend-subtitle">DevOps Engineer</div>
                 </div>
               </li>
               <li
@@ -143,14 +143,14 @@ const ExperienceTimeline = () => {
                 </div>
               </li>
               <li
-                className={`legend-item ${hoveredItems.includes('orange') ? '' : 'no-hover'}`}
-                onMouseEnter={() => _handleHover('orange')}
+                className={`legend-item ${hoveredItems.includes('internship') ? '' : 'no-hover'}`}
+                onMouseEnter={() => _handleHover('internship')}
                 onMouseLeave={() => _handleUnhover()}
               >
-                <span className="period-legend orange"/>
+                <span className="period-legend internship"/>
                 <div className={`period-legend-text ${isDarkTheme && "light-text"}`}>
-                  <div className="period-legend-title">Orange Slovensko</div>
-                  <div className="period-legend-subtitle">DevOps Engineer</div>
+                  <div className="period-legend-title">Internship at Pentalog</div>
+                  <div className="period-legend-subtitle">Full-Stack Web Developer</div>
                 </div>
               </li>
             </ul>
