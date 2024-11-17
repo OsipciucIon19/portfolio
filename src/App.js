@@ -41,7 +41,7 @@ const App = () => {
   }
 
   return (
-    <div className={`container ${isDarkTheme && "light-border"}`}>
+    <div className={`container`}>
       <Background/>
       <NavigationBar handleClick={navigationBarHandler}/>
       <div className={`hint gradient ${isHintDisplayed && "hint-visible"}`}>

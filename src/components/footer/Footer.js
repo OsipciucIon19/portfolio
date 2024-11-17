@@ -5,7 +5,7 @@ const Footer = () => {
   const {isDarkTheme} = useDarkTheme();
   return (
     <footer className={`${isDarkTheme && "light-text"}`}>
-      © 2023 Osipciuc Ion
+      © {new Date().getUTCFullYear()} Osipciuc Ion
     </footer>
   );
 }
