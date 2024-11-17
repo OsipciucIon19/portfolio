@@ -56,7 +56,7 @@ const ExperienceTimeline = () => {
         return {
           background: '#ff7900',
           top: '-50%',
-          left: '78%',
+          right: '0%',
           color: isDarkTheme ? '#000' : '#fff'
         }
       default:

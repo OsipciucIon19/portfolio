@@ -207,12 +207,28 @@
         width: 100%;
     }
 
+    #timeline {
+        margin: 1rem auto;
+    }
+
+    #popup {
+        font-size: 8pt;    
+    }
+
     .year {
         font-size: 8pt;
     }
 }
 
 @media only screen and (max-width: 375px) {
+    #timeline {
+        margin: 0.5rem auto;
+    }
+
+    #popup {
+        font-size: 6pt;    
+    }
+
     .year {
         font-size: 6pt;
     }
