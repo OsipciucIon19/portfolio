@@ -181,6 +181,10 @@ nav {
     padding-right: .5rem;
 }
 
+.canvas-wrapper {
+    margin: 3rem auto;
+}
+
 .content-block-text p {
     margin: 1rem;
     text-align: center;
