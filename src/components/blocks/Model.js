@@ -1,16 +1,14 @@
-import React, { useEffect } from "react";
+import React, { forwardRef } from "react";
 import { useGLTF } from "@react-three/drei";
-import * as THREE from "three";
 
-export default function Model(props) {
+// Wrap the component in forwardRef to forward the ref to the primitive object
+const Model = forwardRef((props, ref) => {
   const { scene } = useGLTF("/portfolio/models/duck/scene.gltf");
 
-  useEffect(() => {
-    const box = new THREE.Box3().setFromObject(scene);
-    console.log("Bounding Box:", box);
-  }, [scene]);
+  return <primitive {...props} ref={ref} object={scene} scale={0.5} />;
+});
 
-  return <primitive {...props} object={scene} scale={0.5} />;
-}
-
+// Preload the model
 useGLTF.preload("/portfolio/models/duck/scene.gltf");
+
+export default Model;

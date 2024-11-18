@@ -1,10 +1,14 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import { useRef } from "react";
 import Model from "./Model";
 import { useDarkTheme } from "../../context/DarkThemeContext";
+import LightUpdater from "./LightUpdater";
 
 const PcCanvas = () => {
   const { isDarkTheme } = useDarkTheme();
+  const modelRef = useRef();
+
   const handleClick = (event) => {
     event.stopPropagation();
   };
@@ -19,21 +23,18 @@ const PcCanvas = () => {
         far: 500,
       }}
     >
-      <ambientLight intensity={isDarkTheme ? 0.5 : 1.5} />
-      <directionalLight
-        position={[10, 10, 10]}
-        intensity={4}
-        castShadow
-      />
-      <pointLight position={[-10, 50, -10]} intensity={isDarkTheme ? 0.1 : 1} />
-      <pointLight position={[10, 50, -10]} intensity={isDarkTheme ? 0.1 : 1} />
-      <pointLight position={[-10, 50, 10]} intensity={isDarkTheme ? 0.1 : 1} />
+      <ambientLight intensity={isDarkTheme ? 0.5 : 0.1} />
+      <LightUpdater />
       <hemisphereLight
         skyColor={0xffffff}
         groundColor={0x000000}
-        intensity={isDarkTheme ? 0.8 : 1.8}
+        intensity={0.5}
       />
-      <Model position={[0, -50, 0]} rotation={[0, Math.PI * 1.2, 0]} />
+      <Model
+        ref={modelRef}
+        position={[0, -50, 0]}
+        rotation={[0, Math.PI * 1.2, 0]}
+      />
       <OrbitControls
         autoRotate
         enableZoom={false}
