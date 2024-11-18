@@ -16,7 +16,7 @@ const PcCanvas = () => {
   return (
     <Canvas
       onClick={handleClick}
-      style={{ height: "300px", width: "100%" }}
+      style={{ height: "300px", width: "100%", cursor: "grab" }}
       camera={{
         position: [0, 100, 100],
         near: 0.1,
