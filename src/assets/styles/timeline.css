@@ -140,58 +140,59 @@
     position: absolute;
     font-size: 10pt;
     font-weight: bold;
-    background-image: -webkit-linear-gradient(-45deg, #8739f9, #37b8f1);
+    background-image: -webkit-linear-gradient(-45deg, #37b8f1, #8739f9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 1px 4px;
-    border-left: 3px solid #37b8f1;
-    border-bottom: 3px solid #37b8f1;
-    border-radius: 5px;
+    padding: 4px 7px;
 }
 
 .bullet {
     position: absolute;
     width: 3px;
     height: 5px;
-    background: #37b8f1;
     border-radius: 100px;
 }
 
 .bullet-2016 {
     left: 9%;
+    height: 14px;
+    background: #3fabf2;
 }
 .bullet-2017 {
     left: 18%;
-
+    background: #469ff2;
 }
 .bullet-2018 {
     left: 27%;
-
+    background: #437cc2;
 }
 .bullet-2019 {
     left: 36%;
-
+    background: #4c96f3;
 }
 .bullet-2020 {
     left: 45%;
-
+    background: #5c7df5;
 }
 .bullet-2021 {
     left: 54%;
-
+    background: #6372f5;
 }
 .bullet-2022 {
     left: 63%;
-
+    background: #6a66f6;
 }
 .bullet-2023 {
     left: 72%;
+    background: #715bf7;
 }
 .bullet-2024 {
     left: 81%;
+    background: #7850f7;
 }
 .bullet-2025 {
     left: 90%;
+    background: #7e46f8;
 }
 
 @media only screen and (max-width: 768px) {

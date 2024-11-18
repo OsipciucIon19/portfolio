@@ -29,35 +29,35 @@ const ExperienceTimeline = () => {
           background: '#ffc76f',
           top: '-15px',
           left: '15%',
-          color: isDarkTheme ? '#000' : '#fff'
+          color: '#000'
         }
       case 'university': 
         return {
           background: '#014b87',
           top: '-15px',
           left: '42%',
-          color: isDarkTheme ? '#000' : '#fff'
+          color: '#fff'
         }
       case 'internship':
         return {
           background: '#ed561d',
           top: '-25px',
           left: '57%',
-          color: isDarkTheme ? '#000' : '#fff'
+          color: '#fff'
         }
       case 'pentalog':
         return {
           background: '#0a7af8',
           top: '-25px',
           left: '61.5%',
-          color: isDarkTheme ? '#000' : '#fff'
+          color: '#fff'
         }
       case 'orange':
         return {
           background: '#ff7900',
           top: '-25px',
           right: '0%',
-          color: isDarkTheme ? '#000' : '#fff'
+          color: '#fff'
         }
       default:
         return null
@@ -127,8 +127,8 @@ const ExperienceTimeline = () => {
               >
                 <span className="period-legend orange"/>
                 <div className={`period-legend-text ${isDarkTheme && "light-text"}`}>
-                  <div className="period-legend-title">Orange Slovensko</div>
-                  <div className="period-legend-subtitle">DevOps Engineer</div>
+                  <div className="period-legend-title">Orange Slovakia</div>
+                  <div className="period-legend-subtitle">IoT DevOps Engineer</div>
                 </div>
               </li>
               <li
@@ -138,7 +138,7 @@ const ExperienceTimeline = () => {
               >
                 <span className="period-legend pentalog"/>
                 <div className={`period-legend-text ${isDarkTheme && "light-text"}`}>
-                  <div className="period-legend-title">Pentalog</div>
+                  <div className="period-legend-title">Pentalog CHI</div>
                   <div className="period-legend-subtitle">Frontend Web Developer</div>
                 </div>
               </li>
@@ -149,7 +149,7 @@ const ExperienceTimeline = () => {
               >
                 <span className="period-legend internship"/>
                 <div className={`period-legend-text ${isDarkTheme && "light-text"}`}>
-                  <div className="period-legend-title">Internship at Pentalog</div>
+                  <div className="period-legend-title">Internship at Pentalog CHI</div>
                   <div className="period-legend-subtitle">Full-Stack Web Developer</div>
                 </div>
               </li>
