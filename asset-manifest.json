@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.17697216.css",
-    "main.js": "/portfolio/static/js/main.fcce1ea8.js",
+    "main.css": "/portfolio/static/css/main.5bf7b6a8.css",
+    "main.js": "/portfolio/static/js/main.ffb812d2.js",
     "static/media/meditatio.mp4": "/portfolio/static/media/meditatio.cc783b8c3588d3492cb5.mp4",
     "static/media/msc.mp4": "/portfolio/static/media/msc.0beb7dbffc579b92935f.mp4",
     "static/media/grocery-cart.mp4": "/portfolio/static/media/grocery-cart.48ab7cf5905a741fd0b8.mp4",
@@ -30,11 +30,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/gmail.svg": "/portfolio/static/media/gmail.9f85e50d7f3c45dd6044168951d59399.svg",
     "static/media/back-icon.svg": "/portfolio/static/media/back-icon.70b1b1f7a56d65263701cde3a224e8c7.svg",
-    "main.17697216.css.map": "/portfolio/static/css/main.17697216.css.map",
-    "main.fcce1ea8.js.map": "/portfolio/static/js/main.fcce1ea8.js.map"
+    "main.5bf7b6a8.css.map": "/portfolio/static/css/main.5bf7b6a8.css.map",
+    "main.ffb812d2.js.map": "/portfolio/static/js/main.ffb812d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.17697216.css",
-    "static/js/main.fcce1ea8.js"
+    "static/css/main.5bf7b6a8.css",
+    "static/js/main.ffb812d2.js"
   ]
 }
