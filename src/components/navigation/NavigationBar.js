@@ -36,12 +36,11 @@ const NavigationBar = ({ activeMenu, handleClick }) => {
   return (
     <nav>
       <div className="logo-container">
-        <div className="gradient-box">
-          <span
-            className={`back-icon-bg ${
-              activeMenu !== "personal-info" ? "visible-back-button" : ""
-            }`}
-          />
+        <div
+          className={`gradient-box ${
+            activeMenu !== "personal-info" ? "visible-back-button" : ""
+          }`}
+        >
           <img
             className="back-icon"
             src={backIcon}

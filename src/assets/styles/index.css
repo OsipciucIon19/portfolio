@@ -244,10 +244,16 @@ video {
 .gradient-box {
     display: flex;
     position: relative;
-    background: linear-gradient(-90deg, #6f60f6, #37b8f1);
+    background: linear-gradient(-45deg, #8739f9, #37b8f1);
     background-clip: padding-box;
     border: solid 5px transparent;
     border-radius: 1000px;
+    width: 60px;
+    transition: width 0.3s ease-in-out;
+}
+
+.gradient-box.visible-back-button {
+    width: 110px;
 }
 
 .back-icon {
@@ -255,27 +261,12 @@ video {
     cursor: pointer;
     position: absolute;
     top: 25%;
-    left: 20%;
+    left: 13px;
     transition: transform .3s ease-in-out;
 }
 
 .back-icon:hover {
     transform: scale(1.05);
-}
-
-.back-icon-bg {
-    position: absolute;
-    height: 100%;
-    width: 0;
-    /* background: #; #5982f4 */
-    background: linear-gradient(-90deg, #8739f9, #5982f4);
-    z-index: -1;
-    left: 30px;
-    transition: all .3s ease-in-out;
-}
-
-.back-icon-bg.visible-back-button {
-    width: 50px;
 }
 
 footer {
