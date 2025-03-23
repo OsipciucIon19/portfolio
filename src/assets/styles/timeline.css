@@ -4,6 +4,7 @@
 
 .legend {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
 }
 
@@ -197,7 +198,7 @@
 
 @media only screen and (max-width: 768px) {
     .legend {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .legend-item {

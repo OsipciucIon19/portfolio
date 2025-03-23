@@ -28,9 +28,11 @@ button {
     all: unset;
     cursor: pointer;
 }
+
 html, body {
     overflow: hidden;
 }
+
 body {
     min-height: 100vh;
     display: flex;
@@ -238,7 +240,7 @@ video {
 }
 
 .logo-image.visible-back-button {
-    transform: translateX(50px);
+    transform: translateX(51px);
 }
 
 .gradient-box {
@@ -456,6 +458,7 @@ footer {
     }
 
     .container {
+        overflow: hidden;
         border: 0;
     }
 

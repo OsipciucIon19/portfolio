@@ -127,8 +127,8 @@ const ExperienceTimeline = () => {
               >
                 <span className="period-legend orange"/>
                 <div className={`period-legend-text ${isDarkTheme && "light-text"}`}>
-                  <div className="period-legend-title">Orange Slovakia</div>
-                  <div className="period-legend-subtitle">IoT DevOps Engineer</div>
+                <div className="period-legend-title">Orange Slovakia</div>
+                <div className="period-legend-subtitle">Full-Stack Web Engineer</div>
                 </div>
               </li>
               <li
